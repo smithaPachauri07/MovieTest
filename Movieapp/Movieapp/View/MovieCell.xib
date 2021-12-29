@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieCell" id="KGk-i7-Jjw" customClass="MovieCell" customModule="Movieapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuB-bz-01Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the-shawshank" translatesAutoresizingMaskIntoConstraints="NO" id="0o7-uo-Q6X">
+                                <rect key="frame" x="10" y="10" width="57" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1hW-xz-erG"/>
+                                    <constraint firstAttribute="width" constant="57" id="OwC-ht-eNA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The Shawshank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0q-q7-r7k">
+                                <rect key="frame" x="72" y="20" width="240" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1994" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-FB-Q1h">
+                                <rect key="frame" x="72" y="63" width="240" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Redemption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsi-GT-lCs">
+                                <rect key="frame" x="72" y="41.5" width="240" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0o7-uo-Q6X" firstAttribute="top" secondItem="GuB-bz-01Z" secondAttribute="top" constant="10" id="0NQ-tf-Un4"/>
+                            <constraint firstAttribute="bottom" secondItem="HAf-FB-Q1h" secondAttribute="bottom" constant="10" id="1jF-5D-ii7"/>
+                            <constraint firstItem="dsi-GT-lCs" firstAttribute="top" secondItem="y0q-q7-r7k" secondAttribute="bottom" constant="2" id="462-Sv-z6K"/>
+                            <constraint firstAttribute="trailing" secondItem="y0q-q7-r7k" secondAttribute="trailing" constant="8" id="DbJ-qu-4Yd"/>
+                            <constraint firstItem="y0q-q7-r7k" firstAttribute="top" secondItem="0o7-uo-Q6X" secondAttribute="top" constant="10" id="GyO-HR-vUz"/>
+                            <constraint firstAttribute="trailing" secondItem="y0q-q7-r7k" secondAttribute="trailing" constant="8" id="N1t-wo-hJC"/>
+                            <constraint firstItem="HAf-FB-Q1h" firstAttribute="leading" secondItem="0o7-uo-Q6X" secondAttribute="trailing" constant="5" id="Tbf-so-1ky"/>
+                            <constraint firstItem="dsi-GT-lCs" firstAttribute="leading" secondItem="0o7-uo-Q6X" secondAttribute="trailing" constant="5" id="VDs-rN-bhu"/>
+                            <constraint firstItem="0o7-uo-Q6X" firstAttribute="leading" secondItem="GuB-bz-01Z" secondAttribute="leading" constant="10" id="Vb3-ab-lTS"/>
+                            <constraint firstAttribute="trailing" secondItem="dsi-GT-lCs" secondAttribute="trailing" constant="8" id="csF-6T-vyD"/>
+                            <constraint firstItem="HAf-FB-Q1h" firstAttribute="top" secondItem="dsi-GT-lCs" secondAttribute="bottom" constant="2" id="pYy-Xg-rpe"/>
+                            <constraint firstItem="y0q-q7-r7k" firstAttribute="leading" secondItem="0o7-uo-Q6X" secondAttribute="trailing" constant="5" id="raw-6p-EMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="HAf-FB-Q1h" secondAttribute="trailing" constant="8" id="tA8-uZ-bz2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GuB-bz-01Z" secondAttribute="bottom" id="7IA-R0-Zcl"/>
+                    <constraint firstItem="GuB-bz-01Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hv6-vG-ZWS"/>
+                    <constraint firstItem="GuB-bz-01Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IaA-Cd-14i"/>
+                    <constraint firstAttribute="trailing" secondItem="GuB-bz-01Z" secondAttribute="trailing" id="a7x-6L-Ohs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblreleseDate" destination="HAf-FB-Q1h" id="ZUu-kH-nrO"/>
+                <outlet property="lbltitle" destination="y0q-q7-r7k" id="wVJ-3d-g01"/>
+                <outlet property="titleDescription" destination="dsi-GT-lCs" id="5SZ-er-dKj"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="the-shawshank" width="480" height="711"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
